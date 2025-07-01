@@ -3,6 +3,12 @@ public class BancaryAccount {
     String accoutNumber;
     double accountBalance;
 
+    public BancaryAccount(String accountHolder, String accoutNumber, double accountBalance) {
+        this.accountHolder = accountHolder;
+        this.accoutNumber = accoutNumber;
+        this.accountBalance = accountBalance;
+    }
+
     void accountDetails() {
         System.out.println("Titular da conta de número " + accoutNumber + ": " + accountHolder + " - SALDO: " + accountBalance);
     }
