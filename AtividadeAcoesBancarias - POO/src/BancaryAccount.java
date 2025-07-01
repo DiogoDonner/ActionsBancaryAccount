@@ -14,7 +14,7 @@ public class BancaryAccount {
     }
 
     void accountDeposit(Integer value) {
-        accountBalance += value;
+        this.accountBalance += value;
         System.out.println("O valor RS " + value + " foi adicionado a sua conta - TOTAL: " + accountBalance);
     }
 
@@ -23,7 +23,10 @@ public class BancaryAccount {
             accountBalance -= value;
             System.out.println("O valor RS " + value + " foi sacado de sua conta - TOTAL: " + accountBalance);
         } else {
+            System.out.println("-----------------------------");
             System.out.println("ERROR - Transação não é possível");
+            System.out.println("-----------------------------");
         }
+
     }
 }
