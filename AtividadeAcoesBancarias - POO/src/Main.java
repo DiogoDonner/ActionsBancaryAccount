@@ -58,7 +58,7 @@ public class Main {
                             "Digite a posição da conta:");
                     System.out.println("-----------------------------");
                     for (BancaryAccount acc : accounts) {
-                        System.out.println(acc.accountHolder + " - " + acc.accoutNumber);
+                        System.out.println(acc.getAccountHolder() + " - " + acc.getAccountNumber());
                         System.out.println("-----------------------------");
                     }
                     String position = scanner.nextLine();
@@ -81,7 +81,7 @@ public class Main {
                             "Digite a posição da conta:");
                     System.out.println("-----------------------------");
                     for (BancaryAccount acc : accounts) {
-                        System.out.println(acc.accountHolder + " - " + acc.accoutNumber);
+                        System.out.println(acc.getAccountHolder() + " - " + acc.getAccountNumber());
                         System.out.println("-----------------------------");
                     }
                     String positionDeposit = scanner.nextLine();
@@ -105,7 +105,7 @@ public class Main {
                             "Digite a posição da conta:");
                     System.out.println("-----------------------------");
                     for (BancaryAccount acc : accounts) {
-                        System.out.println(acc.accountHolder + " - " + acc.accoutNumber);
+                        System.out.println(acc.getAccountHolder() + " - " + acc.getAccountNumber());
                         System.out.println("-----------------------------");
                     }
                     String positionBalance = scanner.nextLine();
